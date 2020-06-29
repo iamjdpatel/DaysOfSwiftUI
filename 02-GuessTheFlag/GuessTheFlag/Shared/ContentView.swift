@@ -11,11 +11,14 @@ struct ContentView: View {
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var selectedAnswer: Int = 0
     
     @State private var scoreTitle = ""
     
     @State private var score: Int = 0
     
+    @State private var showingScore = false
+
     var body: some View {
         
         ZStack {
@@ -44,7 +47,6 @@ struct ContentView: View {
                             .clipShape(Capsule())
                             .overlay(Capsule().stroke(Color.gray, lineWidth: 0.5))
                             .shadow(color: .black, radius: 1)
-                        
                     }
                 }
                 
@@ -63,20 +65,28 @@ struct ContentView: View {
                     .fontWeight(.light)
                     .foregroundColor(.white)
             }
+            
+            .alert(isPresented: $showingScore) {
+                Alert(title: Text(scoreTitle), message: Text("Wrong! That’s the flag of \(countries[selectedAnswer])"), dismissButton: .default(Text("Continue")) {
+                    self.askQuestion()
+                })
+            }
+            
         }
 
     }
     
     private func flagTapped(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle = "Correct"
             score += 15
+            self.askQuestion()
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "OOPS!"
             score -= 5
+            selectedAnswer = number
+            showingScore = true
         }
         
-        self.askQuestion()
     }
     
     private func askQuestion() {
