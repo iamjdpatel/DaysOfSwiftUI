@@ -64,9 +64,6 @@ struct ContentView: View {
                 .clipShape(Circle())
                 .scaleEffect(animationAmount)
                 
-                
-//                Spacer()
-                
             }
             .navigationBarTitle(Text("Animations"), displayMode: .inline)
             
