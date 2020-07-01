@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11AA05824ACE22E0007E5B4 /* AnimatingBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA05724ACE22E0007E5B4 /* AnimatingBindingsView.swift */; };
+		F11AA05924ACE22E0007E5B4 /* AnimatingBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA05724ACE22E0007E5B4 /* AnimatingBindingsView.swift */; };
 		F167764224ABB7F400019F14 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167762F24ABB7F400019F14 /* AnimationsApp.swift */; };
 		F167764324ABB7F400019F14 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167762F24ABB7F400019F14 /* AnimationsApp.swift */; };
 		F167764424ABB7F400019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* ContentView.swift */; };
 		F167764524ABB7F400019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* ContentView.swift */; };
 		F167764624ABB7F400019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167763124ABB7F400019F14 /* Assets.xcassets */; };
 		F167764724ABB7F400019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167763124ABB7F400019F14 /* Assets.xcassets */; };
-		F167765124ABB83200019F14 /* ImplicitAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167765024ABB83200019F14 /* ImplicitAnimationsView.swift */; };
-		F167765224ABB83200019F14 /* ImplicitAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167765024ABB83200019F14 /* ImplicitAnimationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F11AA05724ACE22E0007E5B4 /* AnimatingBindingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBindingsView.swift; sourceTree = "<group>"; };
 		F167762F24ABB7F400019F14 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
 		F167763024ABB7F400019F14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F167763124ABB7F400019F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		F167763E24ABB7F400019F14 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167764024ABB7F400019F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F167764124ABB7F400019F14 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F167765024ABB83200019F14 /* ImplicitAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			children = (
 				F167762F24ABB7F400019F14 /* AnimationsApp.swift */,
 				F167763024ABB7F400019F14 /* ContentView.swift */,
-				F167765024ABB83200019F14 /* ImplicitAnimationsView.swift */,
+				F11AA05724ACE22E0007E5B4 /* AnimatingBindingsView.swift */,
 				F167763124ABB7F400019F14 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -193,7 +193,7 @@
 			files = (
 				F167764424ABB7F400019F14 /* ContentView.swift in Sources */,
 				F167764224ABB7F400019F14 /* AnimationsApp.swift in Sources */,
-				F167765124ABB83200019F14 /* ImplicitAnimationsView.swift in Sources */,
+				F11AA05824ACE22E0007E5B4 /* AnimatingBindingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			files = (
 				F167764524ABB7F400019F14 /* ContentView.swift in Sources */,
 				F167764324ABB7F400019F14 /* AnimationsApp.swift in Sources */,
-				F167765224ABB83200019F14 /* ImplicitAnimationsView.swift in Sources */,
+				F11AA05924ACE22E0007E5B4 /* AnimatingBindingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
