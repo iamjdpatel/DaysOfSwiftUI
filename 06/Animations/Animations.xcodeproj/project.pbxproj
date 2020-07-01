@@ -13,6 +13,18 @@
 		F167764524ABB7F400019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* ContentView.swift */; };
 		F167764624ABB7F400019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167763124ABB7F400019F14 /* Assets.xcassets */; };
 		F167764724ABB7F400019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167763124ABB7F400019F14 /* Assets.xcassets */; };
+		F1E8739C24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8739B24AD057B00B3A057 /* ImplicitAnimationView.swift */; };
+		F1E8739D24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8739B24AD057B00B3A057 /* ImplicitAnimationView.swift */; };
+		F1E8739F24AD070400B3A057 /* AnimatingBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8739E24AD070400B3A057 /* AnimatingBindingsView.swift */; };
+		F1E873A024AD070400B3A057 /* AnimatingBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8739E24AD070400B3A057 /* AnimatingBindingsView.swift */; };
+		F1E873A224AD07D900B3A057 /* ExplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873A124AD07D900B3A057 /* ExplicitAnimationView.swift */; };
+		F1E873A324AD07D900B3A057 /* ExplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873A124AD07D900B3A057 /* ExplicitAnimationView.swift */; };
+		F1E873A524AD08A800B3A057 /* AnimationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873A424AD08A800B3A057 /* AnimationStackView.swift */; };
+		F1E873A624AD08A800B3A057 /* AnimationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873A424AD08A800B3A057 /* AnimationStackView.swift */; };
+		F1E873A824AD09AF00B3A057 /* AnimatingGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873A724AD09AF00B3A057 /* AnimatingGesturesView.swift */; };
+		F1E873A924AD09AF00B3A057 /* AnimatingGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873A724AD09AF00B3A057 /* AnimatingGesturesView.swift */; };
+		F1E873AB24AD0B3100B3A057 /* TransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873AA24AD0B3100B3A057 /* TransitionsView.swift */; };
+		F1E873AC24AD0B3100B3A057 /* TransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873AA24AD0B3100B3A057 /* TransitionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,12 @@
 		F167763E24ABB7F400019F14 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167764024ABB7F400019F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F167764124ABB7F400019F14 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F1E8739B24AD057B00B3A057 /* ImplicitAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimationView.swift; sourceTree = "<group>"; };
+		F1E8739E24AD070400B3A057 /* AnimatingBindingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBindingsView.swift; sourceTree = "<group>"; };
+		F1E873A124AD07D900B3A057 /* ExplicitAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationView.swift; sourceTree = "<group>"; };
+		F1E873A424AD08A800B3A057 /* AnimationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStackView.swift; sourceTree = "<group>"; };
+		F1E873A724AD09AF00B3A057 /* AnimatingGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGesturesView.swift; sourceTree = "<group>"; };
+		F1E873AA24AD0B3100B3A057 /* TransitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,12 @@
 			children = (
 				F167762F24ABB7F400019F14 /* AnimationsApp.swift */,
 				F167763024ABB7F400019F14 /* ContentView.swift */,
+				F1E8739B24AD057B00B3A057 /* ImplicitAnimationView.swift */,
+				F1E8739E24AD070400B3A057 /* AnimatingBindingsView.swift */,
+				F1E873A124AD07D900B3A057 /* ExplicitAnimationView.swift */,
+				F1E873A424AD08A800B3A057 /* AnimationStackView.swift */,
+				F1E873A724AD09AF00B3A057 /* AnimatingGesturesView.swift */,
+				F1E873AA24AD0B3100B3A057 /* TransitionsView.swift */,
 				F167763124ABB7F400019F14 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E873A524AD08A800B3A057 /* AnimationStackView.swift in Sources */,
+				F1E873AB24AD0B3100B3A057 /* TransitionsView.swift in Sources */,
+				F1E8739C24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */,
 				F167764424ABB7F400019F14 /* ContentView.swift in Sources */,
 				F167764224ABB7F400019F14 /* AnimationsApp.swift in Sources */,
+				F1E873A824AD09AF00B3A057 /* AnimatingGesturesView.swift in Sources */,
+				F1E873A224AD07D900B3A057 /* ExplicitAnimationView.swift in Sources */,
+				F1E8739F24AD070400B3A057 /* AnimatingBindingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E873A624AD08A800B3A057 /* AnimationStackView.swift in Sources */,
+				F1E873AC24AD0B3100B3A057 /* TransitionsView.swift in Sources */,
+				F1E8739D24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */,
 				F167764524ABB7F400019F14 /* ContentView.swift in Sources */,
 				F167764324ABB7F400019F14 /* AnimationsApp.swift in Sources */,
+				F1E873A924AD09AF00B3A057 /* AnimatingGesturesView.swift in Sources */,
+				F1E873A324AD07D900B3A057 /* ExplicitAnimationView.swift in Sources */,
+				F1E873A024AD070400B3A057 /* AnimatingBindingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
