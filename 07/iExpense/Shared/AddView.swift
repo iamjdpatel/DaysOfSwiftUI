@@ -25,11 +25,13 @@ struct AddView: View {
             Form {
             
                 TextField("Name", text: $name)
+                
                 Picker("Type", selection: $type) {
                     ForEach(Self.types, id: \.self) {
                         Text($0)
                     }
                 }
+                
                 TextField("Amount", text: $amount)
                     .keyboardType(.numberPad)
                 

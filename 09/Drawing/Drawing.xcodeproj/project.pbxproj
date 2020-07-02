@@ -13,6 +13,16 @@
 		F14EAC3024AD0FA8003CDCFE /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EAC2E24AD0FA8003CDCFE /* ShapeView.swift */; };
 		F14EAC3224AD109B003CDCFE /* ImagePaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EAC3124AD109B003CDCFE /* ImagePaintView.swift */; };
 		F14EAC3324AD109B003CDCFE /* ImagePaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EAC3124AD109B003CDCFE /* ImagePaintView.swift */; };
+		F1B161F324AE236E00C0A481 /* DrawingGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161F224AE236E00C0A481 /* DrawingGroupView.swift */; };
+		F1B161F424AE236E00C0A481 /* DrawingGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161F224AE236E00C0A481 /* DrawingGroupView.swift */; };
+		F1B161F624AE258900C0A481 /* SpecialEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161F524AE258900C0A481 /* SpecialEffectsView.swift */; };
+		F1B161F724AE258900C0A481 /* SpecialEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161F524AE258900C0A481 /* SpecialEffectsView.swift */; };
+		F1B161F924AE2A5300C0A481 /* AnimatableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161F824AE2A5300C0A481 /* AnimatableData.swift */; };
+		F1B161FA24AE2A5300C0A481 /* AnimatableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161F824AE2A5300C0A481 /* AnimatableData.swift */; };
+		F1B161FC24AE330000C0A481 /* AnimatablePairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161FB24AE330000C0A481 /* AnimatablePairView.swift */; };
+		F1B161FD24AE330000C0A481 /* AnimatablePairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161FB24AE330000C0A481 /* AnimatablePairView.swift */; };
+		F1B161FF24AE34DD00C0A481 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161FE24AE34DD00C0A481 /* SpirographView.swift */; };
+		F1B1620024AE34DD00C0A481 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161FE24AE34DD00C0A481 /* SpirographView.swift */; };
 		F1E873C624AD0D3F00B3A057 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */; };
 		F1E873C724AD0D3F00B3A057 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */; };
 		F1E873C824AD0D3F00B3A057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B424AD0D3E00B3A057 /* ContentView.swift */; };
@@ -25,6 +35,11 @@
 		F14EAC2B24AD0F6A003CDCFE /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
 		F14EAC2E24AD0FA8003CDCFE /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		F14EAC3124AD109B003CDCFE /* ImagePaintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaintView.swift; sourceTree = "<group>"; };
+		F1B161F224AE236E00C0A481 /* DrawingGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGroupView.swift; sourceTree = "<group>"; };
+		F1B161F524AE258900C0A481 /* SpecialEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectsView.swift; sourceTree = "<group>"; };
+		F1B161F824AE2A5300C0A481 /* AnimatableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableData.swift; sourceTree = "<group>"; };
+		F1B161FB24AE330000C0A481 /* AnimatablePairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairView.swift; sourceTree = "<group>"; };
+		F1B161FE24AE34DD00C0A481 /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
 		F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		F1E873B424AD0D3E00B3A057 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1E873B524AD0D3F00B3A057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +86,11 @@
 				F14EAC2E24AD0FA8003CDCFE /* ShapeView.swift */,
 				F14EAC2B24AD0F6A003CDCFE /* FlowerView.swift */,
 				F14EAC3124AD109B003CDCFE /* ImagePaintView.swift */,
+				F1B161F224AE236E00C0A481 /* DrawingGroupView.swift */,
+				F1B161F524AE258900C0A481 /* SpecialEffectsView.swift */,
+				F1B161F824AE2A5300C0A481 /* AnimatableData.swift */,
+				F1B161FB24AE330000C0A481 /* AnimatablePairView.swift */,
+				F1B161FE24AE34DD00C0A481 /* SpirographView.swift */,
 				F1E873B524AD0D3F00B3A057 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -200,10 +220,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E873C824AD0D3F00B3A057 /* ContentView.swift in Sources */,
+				F1B161FF24AE34DD00C0A481 /* SpirographView.swift in Sources */,
+				F1B161F324AE236E00C0A481 /* DrawingGroupView.swift in Sources */,
 				F14EAC2C24AD0F6A003CDCFE /* FlowerView.swift in Sources */,
+				F1B161FC24AE330000C0A481 /* AnimatablePairView.swift in Sources */,
+				F1B161F624AE258900C0A481 /* SpecialEffectsView.swift in Sources */,
 				F14EAC3224AD109B003CDCFE /* ImagePaintView.swift in Sources */,
 				F14EAC2F24AD0FA8003CDCFE /* ShapeView.swift in Sources */,
 				F1E873C624AD0D3F00B3A057 /* DrawingApp.swift in Sources */,
+				F1B161F924AE2A5300C0A481 /* AnimatableData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +237,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E873C924AD0D3F00B3A057 /* ContentView.swift in Sources */,
+				F1B1620024AE34DD00C0A481 /* SpirographView.swift in Sources */,
+				F1B161F424AE236E00C0A481 /* DrawingGroupView.swift in Sources */,
 				F14EAC2D24AD0F6A003CDCFE /* FlowerView.swift in Sources */,
+				F1B161FD24AE330000C0A481 /* AnimatablePairView.swift in Sources */,
+				F1B161F724AE258900C0A481 /* SpecialEffectsView.swift in Sources */,
 				F14EAC3324AD109B003CDCFE /* ImagePaintView.swift in Sources */,
 				F14EAC3024AD0FA8003CDCFE /* ShapeView.swift in Sources */,
 				F1E873C724AD0D3F00B3A057 /* DrawingApp.swift in Sources */,
+				F1B161FA24AE2A5300C0A481 /* AnimatableData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

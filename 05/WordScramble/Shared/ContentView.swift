@@ -33,6 +33,11 @@ struct ContentView: View {
                     Text($0)
                 }
                 
+                Text("JD")
+                    .font(.caption)
+                    .fontWeight(.light)
+                    .foregroundColor(.white)
+                
             }
             
             .navigationBarTitle(rootWord)

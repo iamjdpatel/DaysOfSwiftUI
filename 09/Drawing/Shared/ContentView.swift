@@ -12,6 +12,11 @@ struct ContentView: View {
     @State private var showShapes: Bool = false
     @State private var showFlower: Bool = false
     @State private var showImagePaint: Bool = false
+    @State private var showDrawingGroup: Bool = false
+    @State private var showSpecialEffects: Bool = false
+    @State private var showAnimatableData: Bool = false
+    @State private var showAnimatablePair: Bool = false
+    @State private var showSpirograph: Bool = false
 
     var body: some View {
         
@@ -35,6 +40,36 @@ struct ContentView: View {
                     self.showImagePaint.toggle()
                 }.sheet(isPresented: $showImagePaint) {
                     ImagePaintView()
+                }
+                
+                Button("Drawing Group") {
+                    self.showDrawingGroup.toggle()
+                }.sheet(isPresented: $showDrawingGroup) {
+                    DrawingGroupView()
+                }
+                
+                Button("Special Effects") {
+                    self.showSpecialEffects.toggle()
+                }.sheet(isPresented: $showSpecialEffects) {
+                    SpecialEffectsView()
+                }
+                
+                Button("Animatable Data") {
+                    self.showAnimatableData.toggle()
+                }.sheet(isPresented: $showAnimatableData) {
+                    AnimatableDataView()
+                }
+                
+                Button("Animatable Pair") {
+                    self.showAnimatablePair.toggle()
+                }.sheet(isPresented: $showAnimatablePair) {
+                    AnimatablePairView()
+                }
+                
+                Button("Spirograph View") {
+                    self.showSpirograph.toggle()
+                }.sheet(isPresented: $showSpirograph) {
+                    SpirographView()
                 }
                 
             }

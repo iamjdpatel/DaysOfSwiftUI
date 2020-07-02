@@ -23,6 +23,8 @@ struct ContentView: View {
             
             VStack(spacing: 30) {
                 
+                Spacer(minLength: 10)
+                
                 Button("Implicit Animation") {
                     self.showImplicitAnimation.toggle()
                 }.sheet(isPresented: $showImplicitAnimation) {
@@ -59,7 +61,15 @@ struct ContentView: View {
                     TransitionsView()
                 }
                 
+                Spacer()
+                
+                Text("JD")
+                    .font(.caption)
+                    .fontWeight(.light)
+                    .foregroundColor(.white)
+                
             }
+            
             .navigationBarTitle(Text("Animations"), displayMode: .inline)
             
         }
@@ -71,5 +81,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
