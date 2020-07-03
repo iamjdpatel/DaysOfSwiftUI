@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		F104FDA424A9CDC40070E27B /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9124A9CDC30070E27B /* GuessTheFlagApp.swift */; };
 		F104FDA524A9CDC40070E27B /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9124A9CDC30070E27B /* GuessTheFlagApp.swift */; };
-		F104FDA624A9CDC40070E27B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9224A9CDC30070E27B /* ContentView.swift */; };
-		F104FDA724A9CDC40070E27B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9224A9CDC30070E27B /* ContentView.swift */; };
+		F104FDA624A9CDC40070E27B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9224A9CDC30070E27B /* HomeView.swift */; };
+		F104FDA724A9CDC40070E27B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9224A9CDC30070E27B /* HomeView.swift */; };
 		F104FDA824A9CDC40070E27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F104FD9324A9CDC40070E27B /* Assets.xcassets */; };
 		F104FDA924A9CDC40070E27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F104FD9324A9CDC40070E27B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F104FD9124A9CDC30070E27B /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
-		F104FD9224A9CDC30070E27B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F104FD9224A9CDC30070E27B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F104FD9324A9CDC40070E27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F104FD9824A9CDC40070E27B /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F104FD9B24A9CDC40070E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F104FD9124A9CDC30070E27B /* GuessTheFlagApp.swift */,
-				F104FD9224A9CDC30070E27B /* ContentView.swift */,
+				F104FD9224A9CDC30070E27B /* HomeView.swift */,
 				F104FD9324A9CDC40070E27B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F104FDA624A9CDC40070E27B /* ContentView.swift in Sources */,
+				F104FDA624A9CDC40070E27B /* HomeView.swift in Sources */,
 				F104FDA424A9CDC40070E27B /* GuessTheFlagApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F104FDA724A9CDC40070E27B /* ContentView.swift in Sources */,
+				F104FDA724A9CDC40070E27B /* HomeView.swift in Sources */,
 				F104FDA524A9CDC40070E27B /* GuessTheFlagApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
