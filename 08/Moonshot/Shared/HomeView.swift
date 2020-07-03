@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 01/07/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
@@ -40,7 +40,8 @@ struct ContentView: View {
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
+                
             }
             
             .navigationBarTitle("Moonshot")
@@ -53,6 +54,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

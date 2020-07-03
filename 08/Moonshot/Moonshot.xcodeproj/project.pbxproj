@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F11AA09D24AD015E0007E5B4 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA08A24AD015D0007E5B4 /* MoonshotApp.swift */; };
 		F11AA09E24AD015E0007E5B4 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA08A24AD015D0007E5B4 /* MoonshotApp.swift */; };
-		F11AA09F24AD015E0007E5B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA08B24AD015D0007E5B4 /* ContentView.swift */; };
-		F11AA0A024AD015E0007E5B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA08B24AD015D0007E5B4 /* ContentView.swift */; };
+		F11AA09F24AD015E0007E5B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA08B24AD015D0007E5B4 /* HomeView.swift */; };
+		F11AA0A024AD015E0007E5B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA08B24AD015D0007E5B4 /* HomeView.swift */; };
 		F11AA0A124AD015E0007E5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11AA08C24AD015E0007E5B4 /* Assets.xcassets */; };
 		F11AA0A224AD015E0007E5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11AA08C24AD015E0007E5B4 /* Assets.xcassets */; };
 		F11AA0AC24AD01840007E5B4 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AA0AB24AD01840007E5B4 /* Astronaut.swift */; };
@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		F11AA08A24AD015D0007E5B4 /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
-		F11AA08B24AD015D0007E5B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F11AA08B24AD015D0007E5B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F11AA08C24AD015E0007E5B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F11AA09124AD015E0007E5B4 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11AA09424AD015E0007E5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				F11AA08A24AD015D0007E5B4 /* MoonshotApp.swift */,
-				F11AA08B24AD015D0007E5B4 /* ContentView.swift */,
+				F11AA08B24AD015D0007E5B4 /* HomeView.swift */,
 				F11AA0B424AD01CC0007E5B4 /* MissionView.swift */,
 				F11AA0B724AD01DD0007E5B4 /* AstronautView.swift */,
 				F11AA0AE24AD019C0007E5B4 /* Bundle-Decodable.swift */,
@@ -221,7 +221,7 @@
 			files = (
 				F11AA0B824AD01DD0007E5B4 /* AstronautView.swift in Sources */,
 				F11AA0AC24AD01840007E5B4 /* Astronaut.swift in Sources */,
-				F11AA09F24AD015E0007E5B4 /* ContentView.swift in Sources */,
+				F11AA09F24AD015E0007E5B4 /* HomeView.swift in Sources */,
 				F11AA09D24AD015E0007E5B4 /* MoonshotApp.swift in Sources */,
 				F11AA0B224AD01AF0007E5B4 /* Mission.swift in Sources */,
 				F11AA0AF24AD019C0007E5B4 /* Bundle-Decodable.swift in Sources */,
@@ -235,7 +235,7 @@
 			files = (
 				F11AA0B924AD01DD0007E5B4 /* AstronautView.swift in Sources */,
 				F11AA0AD24AD01840007E5B4 /* Astronaut.swift in Sources */,
-				F11AA0A024AD015E0007E5B4 /* ContentView.swift in Sources */,
+				F11AA0A024AD015E0007E5B4 /* HomeView.swift in Sources */,
 				F11AA09E24AD015E0007E5B4 /* MoonshotApp.swift in Sources */,
 				F11AA0B324AD01AF0007E5B4 /* Mission.swift in Sources */,
 				F11AA0B024AD019C0007E5B4 /* Bundle-Decodable.swift in Sources */,
@@ -362,7 +362,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -372,6 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Moonshot;
 				PRODUCT_NAME = Moonshot;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,7 +385,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -393,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Moonshot;
 				PRODUCT_NAME = Moonshot;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
