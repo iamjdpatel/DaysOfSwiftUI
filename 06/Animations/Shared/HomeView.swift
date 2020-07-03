@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 30/06/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     @State private var showImplicitAnimation: Bool = false
     @State private var showAnimatingBindings: Bool = false
@@ -66,7 +66,7 @@ struct ContentView: View {
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                 
             }
             
@@ -80,7 +80,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
             .preferredColorScheme(.dark)
     }
 }

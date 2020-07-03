@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F167764224ABB7F400019F14 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167762F24ABB7F400019F14 /* AnimationsApp.swift */; };
 		F167764324ABB7F400019F14 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167762F24ABB7F400019F14 /* AnimationsApp.swift */; };
-		F167764424ABB7F400019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* ContentView.swift */; };
-		F167764524ABB7F400019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* ContentView.swift */; };
+		F167764424ABB7F400019F14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* HomeView.swift */; };
+		F167764524ABB7F400019F14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167763024ABB7F400019F14 /* HomeView.swift */; };
 		F167764624ABB7F400019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167763124ABB7F400019F14 /* Assets.xcassets */; };
 		F167764724ABB7F400019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167763124ABB7F400019F14 /* Assets.xcassets */; };
 		F1E8739C24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8739B24AD057B00B3A057 /* ImplicitAnimationView.swift */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		F167762F24ABB7F400019F14 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
-		F167763024ABB7F400019F14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F167763024ABB7F400019F14 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F167763124ABB7F400019F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F167763624ABB7F400019F14 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167763924ABB7F400019F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F167762F24ABB7F400019F14 /* AnimationsApp.swift */,
-				F167763024ABB7F400019F14 /* ContentView.swift */,
+				F167763024ABB7F400019F14 /* HomeView.swift */,
 				F1E8739B24AD057B00B3A057 /* ImplicitAnimationView.swift */,
 				F1E8739E24AD070400B3A057 /* AnimatingBindingsView.swift */,
 				F1E873A124AD07D900B3A057 /* ExplicitAnimationView.swift */,
@@ -214,7 +214,7 @@
 				F1E873A524AD08A800B3A057 /* AnimationStackView.swift in Sources */,
 				F1E873AB24AD0B3100B3A057 /* TransitionsView.swift in Sources */,
 				F1E8739C24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */,
-				F167764424ABB7F400019F14 /* ContentView.swift in Sources */,
+				F167764424ABB7F400019F14 /* HomeView.swift in Sources */,
 				F167764224ABB7F400019F14 /* AnimationsApp.swift in Sources */,
 				F1E873A824AD09AF00B3A057 /* AnimatingGesturesView.swift in Sources */,
 				F1E873A224AD07D900B3A057 /* ExplicitAnimationView.swift in Sources */,
@@ -229,7 +229,7 @@
 				F1E873A624AD08A800B3A057 /* AnimationStackView.swift in Sources */,
 				F1E873AC24AD0B3100B3A057 /* TransitionsView.swift in Sources */,
 				F1E8739D24AD057B00B3A057 /* ImplicitAnimationView.swift in Sources */,
-				F167764524ABB7F400019F14 /* ContentView.swift in Sources */,
+				F167764524ABB7F400019F14 /* HomeView.swift in Sources */,
 				F167764324ABB7F400019F14 /* AnimationsApp.swift in Sources */,
 				F1E873A924AD09AF00B3A057 /* AnimatingGesturesView.swift in Sources */,
 				F1E873A324AD07D900B3A057 /* ExplicitAnimationView.swift in Sources */,
