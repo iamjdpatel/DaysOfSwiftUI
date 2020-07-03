@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F1B162B424AE503500C0A481 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162A124AE503400C0A481 /* BucketListApp.swift */; };
 		F1B162B524AE503500C0A481 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162A124AE503400C0A481 /* BucketListApp.swift */; };
-		F1B162B624AE503500C0A481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162A224AE503400C0A481 /* ContentView.swift */; };
-		F1B162B724AE503500C0A481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162A224AE503400C0A481 /* ContentView.swift */; };
+		F1B162B624AE503500C0A481 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162A224AE503400C0A481 /* HomeView.swift */; };
+		F1B162B724AE503500C0A481 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162A224AE503400C0A481 /* HomeView.swift */; };
 		F1B162B824AE503500C0A481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B162A324AE503500C0A481 /* Assets.xcassets */; };
 		F1B162B924AE503500C0A481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B162A324AE503500C0A481 /* Assets.xcassets */; };
 		F1B162C324AE5E2600C0A481 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162C224AE5E2600C0A481 /* MapView.swift */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		F1B162A124AE503400C0A481 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
-		F1B162A224AE503400C0A481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1B162A224AE503400C0A481 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1B162A324AE503500C0A481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B162A824AE503500C0A481 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B162AB24AE503500C0A481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F1B162A124AE503400C0A481 /* BucketListApp.swift */,
-				F1B162A224AE503400C0A481 /* ContentView.swift */,
+				F1B162A224AE503400C0A481 /* HomeView.swift */,
 				F1B162C224AE5E2600C0A481 /* MapView.swift */,
 				F1B162C524AE67B800C0A481 /* MKPointAnnotation-ObservableObject.swift */,
 				F1B162CE24AE6CCC00C0A481 /* MKPointAnnotation-Codable.swift */,
@@ -209,7 +209,7 @@
 			files = (
 				F1B162CF24AE6CCC00C0A481 /* MKPointAnnotation-Codable.swift in Sources */,
 				F1B162CC24AE6A7900C0A481 /* Result.swift in Sources */,
-				F1B162B624AE503500C0A481 /* ContentView.swift in Sources */,
+				F1B162B624AE503500C0A481 /* HomeView.swift in Sources */,
 				F1B162C924AE681300C0A481 /* EditView.swift in Sources */,
 				F1B162C624AE67B800C0A481 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				F1B162C324AE5E2600C0A481 /* MapView.swift in Sources */,
@@ -223,7 +223,7 @@
 			files = (
 				F1B162D024AE6CCC00C0A481 /* MKPointAnnotation-Codable.swift in Sources */,
 				F1B162CD24AE6A7900C0A481 /* Result.swift in Sources */,
-				F1B162B724AE503500C0A481 /* ContentView.swift in Sources */,
+				F1B162B724AE503500C0A481 /* HomeView.swift in Sources */,
 				F1B162CA24AE681300C0A481 /* EditView.swift in Sources */,
 				F1B162C724AE67B800C0A481 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				F1B162C424AE5E2600C0A481 /* MapView.swift in Sources */,
@@ -350,8 +350,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -361,6 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.BucketList;
 				PRODUCT_NAME = BucketList;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,8 +373,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -383,6 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.BucketList;
 				PRODUCT_NAME = BucketList;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 02/07/20.
@@ -9,7 +9,7 @@ import SwiftUI
 import LocalAuthentication
 import MapKit
 
-struct ContentView: View {
+struct HomeView: View {
     
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [CodableMKPointAnnotation]()
@@ -136,6 +136,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
