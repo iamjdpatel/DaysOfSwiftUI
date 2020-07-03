@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 03/07/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     let pictures = [
         "ales-krivec-15949",
@@ -68,6 +68,11 @@ struct ContentView: View {
                 .accessibility(value: Text("\(rating) out of 5"))
                 .padding()
             
+            Text("JD")
+                .font(.caption)
+                .fontWeight(.light)
+                .foregroundColor(.gray)
+            
         }
         
     }
@@ -76,7 +81,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
             .preferredColorScheme(.dark)
     }
 }

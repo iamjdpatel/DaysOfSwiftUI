@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		F1B162EA24AE72A500C0A481 /* AccessibilityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162D724AE72A400C0A481 /* AccessibilityApp.swift */; };
 		F1B162EB24AE72A500C0A481 /* AccessibilityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162D724AE72A400C0A481 /* AccessibilityApp.swift */; };
-		F1B162EC24AE72A500C0A481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162D824AE72A400C0A481 /* ContentView.swift */; };
-		F1B162ED24AE72A500C0A481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162D824AE72A400C0A481 /* ContentView.swift */; };
+		F1B162EC24AE72A500C0A481 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162D824AE72A400C0A481 /* HomeView.swift */; };
+		F1B162ED24AE72A500C0A481 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B162D824AE72A400C0A481 /* HomeView.swift */; };
 		F1B162EE24AE72A500C0A481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B162D924AE72A500C0A481 /* Assets.xcassets */; };
 		F1B162EF24AE72A500C0A481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B162D924AE72A500C0A481 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1B162D724AE72A400C0A481 /* AccessibilityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityApp.swift; sourceTree = "<group>"; };
-		F1B162D824AE72A400C0A481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1B162D824AE72A400C0A481 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1B162D924AE72A500C0A481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B162DE24AE72A500C0A481 /* Accessibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B162E124AE72A500C0A481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F1B162D724AE72A400C0A481 /* AccessibilityApp.swift */,
-				F1B162D824AE72A400C0A481 /* ContentView.swift */,
+				F1B162D824AE72A400C0A481 /* HomeView.swift */,
 				F1B162D924AE72A500C0A481 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B162EC24AE72A500C0A481 /* ContentView.swift in Sources */,
+				F1B162EC24AE72A500C0A481 /* HomeView.swift in Sources */,
 				F1B162EA24AE72A500C0A481 /* AccessibilityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B162ED24AE72A500C0A481 /* ContentView.swift in Sources */,
+				F1B162ED24AE72A500C0A481 /* HomeView.swift in Sources */,
 				F1B162EB24AE72A500C0A481 /* AccessibilityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,8 +320,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -331,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Accessibility;
 				PRODUCT_NAME = Accessibility;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,8 +343,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -353,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Accessibility;
 				PRODUCT_NAME = Accessibility;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
