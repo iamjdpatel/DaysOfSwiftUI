@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 01/07/20.
@@ -7,40 +7,7 @@
 
 import SwiftUI
 
-struct ExpenseItem: Identifiable, Codable {
-    var id = UUID()
-    let name: String
-    let type: String
-    let amount: Int
-}
-
-class Expenses: ObservableObject {
-    
-    @Published var items: [ExpenseItem] {
-        didSet {
-            let encoder = JSONEncoder()
-            if let encoded = try? encoder.encode(items) {
-                UserDefaults.standard.set(encoded, forKey: "Items")
-            }
-        }
-    }
-    
-    init() {
-        
-        if let items = UserDefaults.standard.data(forKey: "Items") {
-            let decoder = JSONDecoder()
-            if let decoded = try? decoder.decode([ExpenseItem].self, from: items) {
-                self.items = decoded
-                return
-            }
-        }
-        
-        self.items = []
-    }
-    
-}
-
-struct ContentView: View {
+struct HomeView: View {
     
     @ObservedObject var expenses = Expenses()
     @State private var showingAddExpense = false
@@ -73,7 +40,8 @@ struct ContentView: View {
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
+                
             }
             
             .navigationBarTitle(Text("iExpense"), displayMode: .large)
@@ -111,7 +79,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
             .preferredColorScheme(.dark)
     }
 }
