@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 29/06/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     private static var defaultWakeTime: Date {
         var components = DateComponents()
@@ -82,7 +82,7 @@ struct ContentView: View {
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                 
             }
             
@@ -118,7 +118,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
             .preferredColorScheme(.dark)
     }
 }
