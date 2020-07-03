@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F1F1C86B24AE7C92006AD4E9 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C85824AE7C92006AD4E9 /* HotProspectsApp.swift */; };
 		F1F1C86C24AE7C92006AD4E9 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C85824AE7C92006AD4E9 /* HotProspectsApp.swift */; };
-		F1F1C86D24AE7C92006AD4E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C85924AE7C92006AD4E9 /* ContentView.swift */; };
-		F1F1C86E24AE7C92006AD4E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C85924AE7C92006AD4E9 /* ContentView.swift */; };
+		F1F1C86D24AE7C92006AD4E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C85924AE7C92006AD4E9 /* HomeView.swift */; };
+		F1F1C86E24AE7C92006AD4E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C85924AE7C92006AD4E9 /* HomeView.swift */; };
 		F1F1C86F24AE7C92006AD4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F1C85A24AE7C92006AD4E9 /* Assets.xcassets */; };
 		F1F1C87024AE7C92006AD4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F1C85A24AE7C92006AD4E9 /* Assets.xcassets */; };
 		F1F1C87A24AE7CA3006AD4E9 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1C87924AE7CA3006AD4E9 /* ProspectsView.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		F1F1C85824AE7C92006AD4E9 /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
-		F1F1C85924AE7C92006AD4E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1F1C85924AE7C92006AD4E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1F1C85A24AE7C92006AD4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F1C85F24AE7C92006AD4E9 /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F1C86224AE7C92006AD4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F1F1C85824AE7C92006AD4E9 /* HotProspectsApp.swift */,
-				F1F1C85924AE7C92006AD4E9 /* ContentView.swift */,
+				F1F1C85924AE7C92006AD4E9 /* HomeView.swift */,
 				F1F1C87924AE7CA3006AD4E9 /* ProspectsView.swift */,
 				F1F1C87C24AE7CAB006AD4E9 /* MeView.swift */,
 				F1F1C87F24AE7CB4006AD4E9 /* Prospect.swift */,
@@ -214,7 +214,7 @@
 				F1F1C87D24AE7CAB006AD4E9 /* MeView.swift in Sources */,
 				F1F1C88024AE7CB4006AD4E9 /* Prospect.swift in Sources */,
 				F1F1C87A24AE7CA3006AD4E9 /* ProspectsView.swift in Sources */,
-				F1F1C86D24AE7C92006AD4E9 /* ContentView.swift in Sources */,
+				F1F1C86D24AE7C92006AD4E9 /* HomeView.swift in Sources */,
 				F1F1C86B24AE7C92006AD4E9 /* HotProspectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +226,7 @@
 				F1F1C87E24AE7CAB006AD4E9 /* MeView.swift in Sources */,
 				F1F1C88124AE7CB4006AD4E9 /* Prospect.swift in Sources */,
 				F1F1C87B24AE7CA3006AD4E9 /* ProspectsView.swift in Sources */,
-				F1F1C86E24AE7C92006AD4E9 /* ContentView.swift in Sources */,
+				F1F1C86E24AE7C92006AD4E9 /* HomeView.swift in Sources */,
 				F1F1C86C24AE7C92006AD4E9 /* HotProspectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +350,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -360,6 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.HotProspects;
 				PRODUCT_NAME = HotProspects;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,7 +373,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -381,6 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.HotProspects;
 				PRODUCT_NAME = HotProspects;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -38,6 +38,12 @@ struct MeView: View {
 
                 Spacer()
                 
+                Text("JD")
+                    .font(.caption)
+                    .fontWeight(.light)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 16)
+                
             }
             .navigationBarTitle("Your code")
         }
