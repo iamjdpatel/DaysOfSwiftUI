@@ -25,8 +25,8 @@
 		F1B1620024AE34DD00C0A481 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B161FE24AE34DD00C0A481 /* SpirographView.swift */; };
 		F1E873C624AD0D3F00B3A057 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */; };
 		F1E873C724AD0D3F00B3A057 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */; };
-		F1E873C824AD0D3F00B3A057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B424AD0D3E00B3A057 /* ContentView.swift */; };
-		F1E873C924AD0D3F00B3A057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B424AD0D3E00B3A057 /* ContentView.swift */; };
+		F1E873C824AD0D3F00B3A057 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B424AD0D3E00B3A057 /* HomeView.swift */; };
+		F1E873C924AD0D3F00B3A057 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E873B424AD0D3E00B3A057 /* HomeView.swift */; };
 		F1E873CA24AD0D3F00B3A057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E873B524AD0D3F00B3A057 /* Assets.xcassets */; };
 		F1E873CB24AD0D3F00B3A057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E873B524AD0D3F00B3A057 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 		F1B161FB24AE330000C0A481 /* AnimatablePairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairView.swift; sourceTree = "<group>"; };
 		F1B161FE24AE34DD00C0A481 /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
 		F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
-		F1E873B424AD0D3E00B3A057 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1E873B424AD0D3E00B3A057 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1E873B524AD0D3F00B3A057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E873BA24AD0D3F00B3A057 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E873BD24AD0D3F00B3A057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E873B324AD0D3E00B3A057 /* DrawingApp.swift */,
-				F1E873B424AD0D3E00B3A057 /* ContentView.swift */,
+				F1E873B424AD0D3E00B3A057 /* HomeView.swift */,
 				F14EAC2E24AD0FA8003CDCFE /* ShapeView.swift */,
 				F14EAC2B24AD0F6A003CDCFE /* FlowerView.swift */,
 				F14EAC3124AD109B003CDCFE /* ImagePaintView.swift */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E873C824AD0D3F00B3A057 /* ContentView.swift in Sources */,
+				F1E873C824AD0D3F00B3A057 /* HomeView.swift in Sources */,
 				F1B161FF24AE34DD00C0A481 /* SpirographView.swift in Sources */,
 				F1B161F324AE236E00C0A481 /* DrawingGroupView.swift in Sources */,
 				F14EAC2C24AD0F6A003CDCFE /* FlowerView.swift in Sources */,
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E873C924AD0D3F00B3A057 /* ContentView.swift in Sources */,
+				F1E873C924AD0D3F00B3A057 /* HomeView.swift in Sources */,
 				F1B1620024AE34DD00C0A481 /* SpirographView.swift in Sources */,
 				F1B161F424AE236E00C0A481 /* DrawingGroupView.swift in Sources */,
 				F14EAC2D24AD0F6A003CDCFE /* FlowerView.swift in Sources */,
@@ -368,7 +368,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -378,6 +379,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Drawing;
 				PRODUCT_NAME = Drawing;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,7 +391,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -399,6 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Drawing;
 				PRODUCT_NAME = Drawing;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

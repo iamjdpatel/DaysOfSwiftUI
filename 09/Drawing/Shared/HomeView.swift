@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 01/07/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     @State private var showShapes: Bool = false
     @State private var showFlower: Bool = false
@@ -23,6 +23,8 @@ struct ContentView: View {
         NavigationView {
             
             VStack(spacing: 30) {
+                
+//                Spacer(minLength: 30)
                 
                 Button("Shapes") {
                     self.showShapes.toggle()
@@ -71,8 +73,16 @@ struct ContentView: View {
                 }.sheet(isPresented: $showSpirograph) {
                     SpirographView()
                 }
+             
+                Spacer()
+                
+                Text("JD")
+                    .font(.caption)
+                    .fontWeight(.light)
+                    .foregroundColor(.gray)
                 
             }
+            .padding(.top, 50)
             .navigationBarTitle(Text("Animations"), displayMode: .inline)
             
         }
@@ -84,7 +94,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
 
