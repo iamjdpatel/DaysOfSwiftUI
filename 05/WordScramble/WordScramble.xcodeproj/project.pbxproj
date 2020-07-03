@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F167761824ABB23B00019F14 /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167760524ABB23A00019F14 /* WordScrambleApp.swift */; };
 		F167761924ABB23B00019F14 /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167760524ABB23A00019F14 /* WordScrambleApp.swift */; };
-		F167761A24ABB23B00019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167760624ABB23A00019F14 /* ContentView.swift */; };
-		F167761B24ABB23B00019F14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167760624ABB23A00019F14 /* ContentView.swift */; };
+		F167761A24ABB23B00019F14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167760624ABB23A00019F14 /* HomeView.swift */; };
+		F167761B24ABB23B00019F14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167760624ABB23A00019F14 /* HomeView.swift */; };
 		F167761C24ABB23B00019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167760724ABB23B00019F14 /* Assets.xcassets */; };
 		F167761D24ABB23B00019F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167760724ABB23B00019F14 /* Assets.xcassets */; };
 		F167762724ABB4C300019F14 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F167762624ABB4C300019F14 /* start.txt */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		F167760524ABB23A00019F14 /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
-		F167760624ABB23A00019F14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F167760624ABB23A00019F14 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F167760724ABB23B00019F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F167760C24ABB23B00019F14 /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167760F24ABB23B00019F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F167760524ABB23A00019F14 /* WordScrambleApp.swift */,
-				F167760624ABB23A00019F14 /* ContentView.swift */,
+				F167760624ABB23A00019F14 /* HomeView.swift */,
 				F167760724ABB23B00019F14 /* Assets.xcassets */,
 				F167762624ABB4C300019F14 /* start.txt */,
 			);
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F167761A24ABB23B00019F14 /* ContentView.swift in Sources */,
+				F167761A24ABB23B00019F14 /* HomeView.swift in Sources */,
 				F167761824ABB23B00019F14 /* WordScrambleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F167761B24ABB23B00019F14 /* ContentView.swift in Sources */,
+				F167761B24ABB23B00019F14 /* HomeView.swift in Sources */,
 				F167761924ABB23B00019F14 /* WordScrambleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
