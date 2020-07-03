@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F1B1621A24AE369500C0A481 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B1620724AE369500C0A481 /* CupcakeCornerApp.swift */; };
 		F1B1621B24AE369500C0A481 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B1620724AE369500C0A481 /* CupcakeCornerApp.swift */; };
-		F1B1621C24AE369500C0A481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B1620824AE369500C0A481 /* ContentView.swift */; };
-		F1B1621D24AE369500C0A481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B1620824AE369500C0A481 /* ContentView.swift */; };
 		F1B1621E24AE369500C0A481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B1620924AE369500C0A481 /* Assets.xcassets */; };
 		F1B1621F24AE369500C0A481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B1620924AE369500C0A481 /* Assets.xcassets */; };
 		F1B1622924AE36A200C0A481 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B1622824AE36A200C0A481 /* Order.swift */; };
@@ -29,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		F1B1620724AE369500C0A481 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
-		F1B1620824AE369500C0A481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1B1620924AE369500C0A481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B1620E24AE369500C0A481 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B1621124AE369500C0A481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,11 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				F1B1620724AE369500C0A481 /* CupcakeCornerApp.swift */,
-				F1B1620824AE369500C0A481 /* ContentView.swift */,
+				F1B1623124AE36C100C0A481 /* HomeView.swift */,
 				F1B1622824AE36A200C0A481 /* Order.swift */,
 				F1B1622B24AE36AB00C0A481 /* APIView.swift */,
 				F1B1622E24AE36B800C0A481 /* FormView.swift */,
-				F1B1623124AE36C100C0A481 /* HomeView.swift */,
 				F1B1623424AE36D000C0A481 /* AddressView.swift */,
 				F1B1623724AE36DB00C0A481 /* CheckoutView.swift */,
 				F1B1620924AE369500C0A481 /* Assets.xcassets */,
@@ -216,7 +212,6 @@
 				F1B1622C24AE36AB00C0A481 /* APIView.swift in Sources */,
 				F1B1622F24AE36B800C0A481 /* FormView.swift in Sources */,
 				F1B1623224AE36C100C0A481 /* HomeView.swift in Sources */,
-				F1B1621C24AE369500C0A481 /* ContentView.swift in Sources */,
 				F1B1623824AE36DB00C0A481 /* CheckoutView.swift in Sources */,
 				F1B1621A24AE369500C0A481 /* CupcakeCornerApp.swift in Sources */,
 			);
@@ -231,7 +226,6 @@
 				F1B1622D24AE36AB00C0A481 /* APIView.swift in Sources */,
 				F1B1623024AE36B800C0A481 /* FormView.swift in Sources */,
 				F1B1623324AE36C100C0A481 /* HomeView.swift in Sources */,
-				F1B1621D24AE369500C0A481 /* ContentView.swift in Sources */,
 				F1B1623924AE36DB00C0A481 /* CheckoutView.swift in Sources */,
 				F1B1621B24AE369500C0A481 /* CupcakeCornerApp.swift in Sources */,
 			);
@@ -356,7 +350,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -366,6 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.CupcakeCorner;
 				PRODUCT_NAME = CupcakeCorner;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,7 +373,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -387,6 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.CupcakeCorner;
 				PRODUCT_NAME = CupcakeCorner;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
