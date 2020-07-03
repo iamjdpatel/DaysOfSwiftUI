@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		F1726E5324A92209009391BE /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1726E4024A92209009391BE /* WeSplitApp.swift */; };
 		F1726E5424A92209009391BE /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1726E4024A92209009391BE /* WeSplitApp.swift */; };
-		F1726E5524A92209009391BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1726E4124A92209009391BE /* ContentView.swift */; };
-		F1726E5624A92209009391BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1726E4124A92209009391BE /* ContentView.swift */; };
+		F1726E5524A92209009391BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1726E4124A92209009391BE /* HomeView.swift */; };
+		F1726E5624A92209009391BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1726E4124A92209009391BE /* HomeView.swift */; };
 		F1726E5724A92209009391BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1726E4224A92209009391BE /* Assets.xcassets */; };
 		F1726E5824A92209009391BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1726E4224A92209009391BE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1726E4024A92209009391BE /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
-		F1726E4124A92209009391BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1726E4124A92209009391BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1726E4224A92209009391BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1726E4724A92209009391BE /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1726E4A24A92209009391BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F1726E4024A92209009391BE /* WeSplitApp.swift */,
-				F1726E4124A92209009391BE /* ContentView.swift */,
+				F1726E4124A92209009391BE /* HomeView.swift */,
 				F1726E4224A92209009391BE /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1726E5524A92209009391BE /* ContentView.swift in Sources */,
+				F1726E5524A92209009391BE /* HomeView.swift in Sources */,
 				F1726E5324A92209009391BE /* WeSplitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1726E5624A92209009391BE /* ContentView.swift in Sources */,
+				F1726E5624A92209009391BE /* HomeView.swift in Sources */,
 				F1726E5424A92209009391BE /* WeSplitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

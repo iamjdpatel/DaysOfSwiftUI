@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Shared
 //
 //  Created by JD on 29/06/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     @State private var checkAmount = ""
     @State private var numberOfPeople = 2
@@ -32,8 +32,11 @@ struct ContentView: View {
     }
     
     var body: some View {
+        
         NavigationView {
+            
             VStack {
+                
                 Form {
                     Section {
                         TextField("Amount", text: $checkAmount)
@@ -81,7 +84,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
             .preferredColorScheme(.dark)
     }
 }
