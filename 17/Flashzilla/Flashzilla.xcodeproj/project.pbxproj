@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F117F07824AF100F00D863D1 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F06524AF100E00D863D1 /* FlashzillaApp.swift */; };
 		F117F07924AF100F00D863D1 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F06524AF100E00D863D1 /* FlashzillaApp.swift */; };
-		F117F07A24AF100F00D863D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F06624AF100E00D863D1 /* ContentView.swift */; };
-		F117F07B24AF100F00D863D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F06624AF100E00D863D1 /* ContentView.swift */; };
+		F117F07A24AF100F00D863D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F06624AF100E00D863D1 /* HomeView.swift */; };
+		F117F07B24AF100F00D863D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F06624AF100E00D863D1 /* HomeView.swift */; };
 		F117F07C24AF100F00D863D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F117F06724AF100F00D863D1 /* Assets.xcassets */; };
 		F117F07D24AF100F00D863D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F117F06724AF100F00D863D1 /* Assets.xcassets */; };
 		F117F08D24AF11C900D863D1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117F08C24AF11C900D863D1 /* Card.swift */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		F117F06524AF100E00D863D1 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
-		F117F06624AF100E00D863D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F117F06624AF100E00D863D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F117F06724AF100F00D863D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F117F06C24AF100F00D863D1 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F117F06F24AF100F00D863D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				F117F06524AF100E00D863D1 /* FlashzillaApp.swift */,
-				F117F06624AF100E00D863D1 /* ContentView.swift */,
+				F117F06624AF100E00D863D1 /* HomeView.swift */,
 				F117F08C24AF11C900D863D1 /* Card.swift */,
 				F117F08F24AF122200D863D1 /* CardView.swift */,
 				F117F09224AF1D5100D863D1 /* EditCards.swift */,
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F117F07A24AF100F00D863D1 /* ContentView.swift in Sources */,
+				F117F07A24AF100F00D863D1 /* HomeView.swift in Sources */,
 				F117F08D24AF11C900D863D1 /* Card.swift in Sources */,
 				F117F09024AF122200D863D1 /* CardView.swift in Sources */,
 				F117F09324AF1D5100D863D1 /* EditCards.swift in Sources */,
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F117F07B24AF100F00D863D1 /* ContentView.swift in Sources */,
+				F117F07B24AF100F00D863D1 /* HomeView.swift in Sources */,
 				F117F08E24AF11C900D863D1 /* Card.swift in Sources */,
 				F117F09124AF122200D863D1 /* CardView.swift in Sources */,
 				F117F09424AF1D5100D863D1 /* EditCards.swift in Sources */,
@@ -338,8 +338,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -349,6 +349,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Flashzilla;
 				PRODUCT_NAME = Flashzilla;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,8 +361,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -371,6 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.swiftui.Flashzilla;
 				PRODUCT_NAME = Flashzilla;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
