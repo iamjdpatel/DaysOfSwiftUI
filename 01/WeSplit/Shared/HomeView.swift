@@ -69,7 +69,7 @@ struct HomeView: View {
                     }
                     
                 }
-                .dismissKeyboardWhileSwipe()
+                .dismissKeyboardOnDrag()
 
                 
                 Text("JD")
@@ -93,17 +93,18 @@ struct ContentView_Previews: PreviewProvider {
 
 
 extension View {
-    func dismissKeyboardWhileSwipe() -> some View {
-        self.modifier(DragDismiss())
+    func dismissKeyboardOnDrag() -> some View {
+        self.modifier(GestureModifier())
     }
 }
 
-struct DragDismiss: ViewModifier {
-    
+struct GestureModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .gesture(DragGesture().onChanged{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)})
+            .gesture(DragGesture().onChanged{_ in
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),
+                                                to: nil, from: nil, for: nil)
+            })
     }
-    
 }
 
