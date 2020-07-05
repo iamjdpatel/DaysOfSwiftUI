@@ -69,6 +69,8 @@ struct HomeView: View {
                     }
                     
                 }
+                .dismissKeyboardWhileSwipe()
+
                 
                 Text("JD")
                     .font(.caption)
@@ -88,3 +90,20 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+
+
+extension View {
+    func dismissKeyboardWhileSwipe() -> some View {
+        self.modifier(DragDismiss())
+    }
+}
+
+struct DragDismiss: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .gesture(DragGesture().onChanged{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)})
+    }
+    
+}
+
