@@ -23,7 +23,7 @@ struct HomeView: View {
             
             VStack(spacing: 30) {
                 
-                Spacer(minLength: 10)
+                Spacer()
                 
                 Button("Implicit Animation") {
                     self.showImplicitAnimation.toggle()
