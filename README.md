@@ -1,5 +1,4 @@
-# Rang
-SwiftUI - Match the Rang (Color)
+# DaysOfSwiftui
 <p style="text-align:center;">
-<img src="screenshots/rang.png" height= "700"> <img src="screenshots/gradient.png" height= "700">
+<img src="screenshots/img_p1.png" height= "700"> 
 </p>
