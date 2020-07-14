@@ -14,7 +14,6 @@ struct HomeView: View {
     @State private var tipPercentage = 2
     
     private let tipPercentages = [10, 15, 20, 25, 0]
-    
     private let specifier = "%.2f"
     
     private var grandTotal: Double {
@@ -34,15 +33,11 @@ struct HomeView: View {
     var body: some View {
         
         NavigationView {
-            
             VStack {
-                
                 Form {
                     Section {
                         TextField("Amount", text: $checkAmount)
                             .keyboardType(.decimalPad)
-                        
-                        
                         Picker("Number of people", selection: $numberOfPeople) {
                             ForEach(2 ..< 100) {
                                 Text("\($0) people")
@@ -51,7 +46,6 @@ struct HomeView: View {
                     }
                     
                     Section(header: Text("How much tip do you want to leave?")) {
-                        
                         Picker("Tip percentage", selection: $tipPercentage) {
                             ForEach(0 ..< tipPercentages.count) {
                                 Text("\(self.tipPercentages[$0])%")
@@ -67,11 +61,9 @@ struct HomeView: View {
                     Section(header: Text("Amount per person")) {
                         Text("$ \(totalPerPerson, specifier: specifier)")
                     }
-                    
                 }
                 .dismissKeyboardOnDrag()
 
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
@@ -79,9 +71,7 @@ struct HomeView: View {
             }
             .navigationBarTitle("WeSplit")
         }
-        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -90,7 +80,6 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-
 
 extension View {
     func dismissKeyboardOnDrag() -> some View {
