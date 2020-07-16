@@ -13,6 +13,8 @@
 		F104FDA724A9CDC40070E27B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104FD9224A9CDC30070E27B /* HomeView.swift */; };
 		F104FDA824A9CDC40070E27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F104FD9324A9CDC40070E27B /* Assets.xcassets */; };
 		F104FDA924A9CDC40070E27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F104FD9324A9CDC40070E27B /* Assets.xcassets */; };
+		F1C338B824C09E8300120761 /* ScoreIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C338B724C09E8300120761 /* ScoreIndicator.swift */; };
+		F1C338B924C09E8300120761 /* ScoreIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C338B724C09E8300120761 /* ScoreIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		F104FDA024A9CDC40070E27B /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F104FDA224A9CDC40070E27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F104FDA324A9CDC40070E27B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F1C338B724C09E8300120761 /* ScoreIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			children = (
 				F104FD9124A9CDC30070E27B /* GuessTheFlagApp.swift */,
 				F104FD9224A9CDC30070E27B /* HomeView.swift */,
+				F1C338B724C09E8300120761 /* ScoreIndicator.swift */,
 				F104FD9324A9CDC40070E27B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -189,6 +193,7 @@
 			files = (
 				F104FDA624A9CDC40070E27B /* HomeView.swift in Sources */,
 				F104FDA424A9CDC40070E27B /* GuessTheFlagApp.swift in Sources */,
+				F1C338B824C09E8300120761 /* ScoreIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +203,7 @@
 			files = (
 				F104FDA724A9CDC40070E27B /* HomeView.swift in Sources */,
 				F104FDA524A9CDC40070E27B /* GuessTheFlagApp.swift in Sources */,
+				F1C338B924C09E8300120761 /* ScoreIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +326,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -343,8 +350,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
