@@ -18,28 +18,21 @@ struct HomeView: View {
     @State private var showingError = false
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
                 TextField("Enter your word", text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
                     .padding()
-                
                 List(usedWords, id: \.self) {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
                     .foregroundColor(.gray)
-                
             }
-            
             .navigationBarTitle(rootWord)
             .navigationBarItems(trailing:
                 Button(action: {self.startGame()}, label: {Image(systemName: "arrow.clockwise")})
@@ -48,9 +41,7 @@ struct HomeView: View {
             .alert(isPresented: $showingError) {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             }
-            
         }
-        
     }
     
     private func startGame() {
@@ -93,22 +84,18 @@ struct HomeView: View {
         guard answer.count > 0 else {
             return
         }
-
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
             return
         }
-
         guard isPossible(word: answer) else {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
         }
-
         guard isReal(word: answer) else {
             wordError(title: "Word not possible", message: "That isn't a real word.")
             return
         }
-
         usedWords.insert(answer, at: 0)
         newWord = ""
     }
@@ -118,7 +105,6 @@ struct HomeView: View {
         errorMessage = message
         showingError = true
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

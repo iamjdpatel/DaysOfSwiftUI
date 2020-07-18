@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct GridStack<Content: View>: View {
-    
     let rows: Int
     let columns: Int
     let content: (Int, Int) -> Content
-    
     init(rows: Int, columns: Int, @ViewBuilder content: @escaping (Int, Int) -> Content) {
         self.rows = rows
         self.columns = columns
@@ -30,23 +28,16 @@ struct GridStack<Content: View>: View {
             }
         }
     }
-    
 }
 
-
 struct GridView: View {
-    
     var body: some View {
-        
         NavigationView {
-            
             GridStack(rows: 9, columns: 3) { row, col in
                 Image(systemName: "\(row * 4 + col).circle")
                 Text("R\(row) C\(col)")
             }
-            
             .navigationBarTitle(Text("Grid View"), displayMode: .inline)
-            
         }
     }
 }
