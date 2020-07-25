@@ -8,29 +8,21 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @Environment(\.accessibilityEnabled) var accessibilityEnabled
-    
     @State private var cards = [Card]()
-
     @State private var timeRemaining = 10
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
     @State private var isActive = true
     @State private var showingEditScreen = false
     
     var body: some View {
-        
         ZStack {
-            
             Image(decorative: "background")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-            
             VStack {
-                
                 Text("Time: \(timeRemaining)")
                     .font(.title)
                     .foregroundColor(.white)
@@ -41,7 +33,6 @@ struct HomeView: View {
                             .fill(Color.black)
                             .opacity(0.75)
                     )
-                
                 ZStack {
                     ForEach(0..<cards.count, id: \.self) { index in
                         CardView(card: self.cards[index]) {
@@ -55,7 +46,6 @@ struct HomeView: View {
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
-                
                 if cards.isEmpty {
                     Button("Start Again", action: resetCards)
                         .padding()
@@ -63,9 +53,7 @@ struct HomeView: View {
                         .foregroundColor(.black)
                         .clipShape(Capsule())
                 }
-                
             }
-            
             VStack {
                 HStack {
                     Spacer()
@@ -79,18 +67,14 @@ struct HomeView: View {
                             .clipShape(Circle())
                     }
                 }
-                
                 Spacer()
             }
             .foregroundColor(.white)
             .font(.largeTitle)
             .padding()
-            
             if differentiateWithoutColor || accessibilityEnabled {
-                
                 VStack {
                     Spacer()
-                    
                     HStack {
                         Button(action: {
                             withAnimation {
@@ -105,7 +89,6 @@ struct HomeView: View {
                         .accessibility(label: Text("Wrong"))
                         .accessibility(hint: Text("Mark your answer as being incorrect."))
                         Spacer()
-                        
                         Button(action: {
                             withAnimation {
                                 self.removeCard(at: self.cards.count - 1)
@@ -124,22 +107,17 @@ struct HomeView: View {
                     .padding()
                 }
             }
-            
         }
-        
         .onAppear(perform: resetCards)
-
         .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
             EditCards()
         }
-        
         .onReceive(timer) { time in
             guard self.isActive else { return }
             if self.timeRemaining > 0 {
                 self.timeRemaining -= 1
             }
         }
-        
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             self.isActive = false
         }
@@ -148,7 +126,6 @@ struct HomeView: View {
                 self.isActive = true
             }
         }
-        
     }
     
     private func loadData() {

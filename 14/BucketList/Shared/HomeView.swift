@@ -10,33 +10,23 @@ import LocalAuthentication
 import MapKit
 
 struct HomeView: View {
-    
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [CodableMKPointAnnotation]()
-    
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
-    
     @State private var showingEditScreen = false
     
     var body: some View {
-        
         ZStack {
-            
             MapView(centerCoordinate: $centerCoordinate, annotations: locations, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails)
                 .edgesIgnoringSafeArea(.all)
-            
             Circle()
                 .fill(Color.blue)
                 .opacity(0.3)
                 .frame(width: 32, height: 32)
-            
             VStack {
-                
                 Spacer()
-                
                 HStack {
-                    
                     Spacer()
                     Button(action: {
                         let newLocation = CodableMKPointAnnotation()
@@ -54,27 +44,20 @@ struct HomeView: View {
                     .font(.title)
                     .clipShape(Circle())
                     .padding(.trailing)
-                    
                 }
-                
             }
-            
         }
-        
         .onAppear(perform: loadData)
-        
         .alert(isPresented: $showingPlaceDetails) {
             Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information."), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
                 self.showingEditScreen = true
             })
         }
-        
         .sheet(isPresented: $showingEditScreen, onDismiss: saveData) {
             if self.selectedPlace != nil {
                 EditView(placemark: self.selectedPlace!)
             }
         }
-        
     }
     
     func getDocumentsDirectory() -> URL {
@@ -103,7 +86,6 @@ struct HomeView: View {
         }
     }
     
-    
     //FaceID / TouchID
     /*
     func authenticate() {
@@ -131,7 +113,6 @@ struct HomeView: View {
             // no biometrics
         }
     }*/
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

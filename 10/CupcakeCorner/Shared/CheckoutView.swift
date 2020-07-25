@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct CheckoutView: View {
-    
     @ObservedObject var order: Order
-
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
     
     var body: some View {
-        
         GeometryReader { geo in
             ScrollView {
                 VStack {
@@ -42,7 +39,6 @@ struct CheckoutView: View {
     }
     
     func placeOrder() {
-        
         guard let encoded = try? JSONEncoder().encode(order) else {
             print("Failed to encode order")
             return
@@ -55,7 +51,6 @@ struct CheckoutView: View {
         request.httpBody = encoded
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-            
             guard let data = data else {
                 print("No data in response: \(error?.localizedDescription ?? "Unknown error").")
                 return
@@ -67,11 +62,8 @@ struct CheckoutView: View {
             } else {
                 print("Invalid response from server")
             }
-            
         }.resume()
-        
     }
-    
 }
 
 struct CheckoutView_Previews: PreviewProvider {

@@ -8,20 +8,15 @@
 import SwiftUI
 
 class Prospect: Identifiable, Codable {
-    
     var id = UUID()
     var name = "Anonymous"
     var emailAddress = ""
     fileprivate(set) var isContacted = false
-
 }
 
 class Prospects: ObservableObject {
-    
     @Published private(set) var people: [Prospect]
-
     static let saveKey = "SavedData"
-
     init() {
 //        if let data = UserDefaults.standard.data(forKey: "SavedData") {
         if let data = UserDefaults.standard.data(forKey: Self.saveKey) {
@@ -30,7 +25,6 @@ class Prospects: ObservableObject {
                 return
             }
         }
-
         self.people = []
     }
     
@@ -51,6 +45,5 @@ class Prospects: ObservableObject {
         prospect.isContacted.toggle()
         save()
     }
-    
 }
 

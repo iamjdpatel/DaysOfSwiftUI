@@ -8,7 +8,6 @@
 import SwiftUI
 
 class ImageSaver: NSObject {
-    
     var successHandler: (() -> Void)?
     var errorHandler: ((Error) -> Void)?
     
@@ -17,14 +16,11 @@ class ImageSaver: NSObject {
     }
 
     @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        
         if let error = error {
             errorHandler?(error)
         } else {
             successHandler?()
         }
-        
     }
-    
 }
 

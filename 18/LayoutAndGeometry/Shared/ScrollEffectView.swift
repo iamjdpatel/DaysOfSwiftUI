@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ScrollEffectView: View {
-    
     let colors: [Color] = [.red, .green, .blue, .orange, .pink, .purple, .yellow]
-    
     var body: some View {
         NavigationView {
             GeometryReader { fullView in

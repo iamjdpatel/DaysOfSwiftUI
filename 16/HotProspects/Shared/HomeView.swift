@@ -8,13 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-
     var prospects = Prospects()
-
     var body: some View {
-        
         TabView {
-            
             ProspectsView(filter: .none)
                 .tabItem {
                     Image(systemName: "person.3")
@@ -35,11 +31,8 @@ struct HomeView: View {
                     Image(systemName: "person.crop.square")
                     Text("Me")
                 }
-            
         }.environmentObject(prospects)
-        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

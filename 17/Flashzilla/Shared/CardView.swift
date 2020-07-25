@@ -8,23 +8,16 @@
 import SwiftUI
 
 struct CardView: View {
-    
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @Environment(\.accessibilityEnabled) var accessibilityEnabled
-
     let card: Card
-
     var removal: (() -> Void)? = nil
-
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero        
-
     @State private var feedback = UINotificationFeedbackGenerator()
 
     var body: some View {
-        
         ZStack {
-            
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .fill(
                     differentiateWithoutColor
@@ -40,7 +33,6 @@ struct CardView: View {
                             .fill(offset.width > 0 ? Color.green : Color.red)
                 )
                 .shadow(radius: 10)
-            
             VStack {
                 if accessibilityEnabled {
                     Text(isShowingAnswer ? card.answer : card.prompt)
@@ -72,7 +64,6 @@ struct CardView: View {
                     self.offset = offset.translation
                     self.feedback.prepare()
                 }
-                
                 .onEnded { _ in
                     if abs(self.offset.width) > 100 {
                         if self.offset.width > 0 {
@@ -90,9 +81,7 @@ struct CardView: View {
             self.isShowingAnswer.toggle()
         }
         .animation(.spring())
-        
     }
-    
 }
 
 struct CardView_Previews: PreviewProvider {

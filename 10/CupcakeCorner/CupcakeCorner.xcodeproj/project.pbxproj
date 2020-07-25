@@ -73,10 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				F1B1620724AE369500C0A481 /* CupcakeCornerApp.swift */,
-				F1B1623124AE36C100C0A481 /* HomeView.swift */,
-				F1B1622824AE36A200C0A481 /* Order.swift */,
 				F1B1622B24AE36AB00C0A481 /* APIView.swift */,
 				F1B1622E24AE36B800C0A481 /* FormView.swift */,
+				F1B1623124AE36C100C0A481 /* HomeView.swift */,
+				F1B1622824AE36A200C0A481 /* Order.swift */,
 				F1B1623424AE36D000C0A481 /* AddressView.swift */,
 				F1B1623724AE36DB00C0A481 /* CheckoutView.swift */,
 				F1B1620924AE369500C0A481 /* Assets.xcassets */,

@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct AlignmentView: View {
-    
     var body: some View {
-        
         NavigationView {
-            
             VStack(alignment: .leading) {
                 ForEach(0..<10) { position in
                     Text("Number \(position)")
@@ -22,13 +19,9 @@ struct AlignmentView: View {
             .background(Color.red)
             .frame(width: 400, height: 400)
             .background(Color.blue)
-            
             .navigationBarTitle(Text("Alignment"), displayMode: .inline)
-            
         }
-        
     }
-    
 }
 
 struct AlignmentView_Previews: PreviewProvider {

@@ -9,22 +9,16 @@ import SwiftUI
 import CoreData
 
 struct HomeView: View {
-    
     @State private var showWizardView: Bool = false
     @State private var showShipView: Bool = false
     @State private var showSingerView: Bool = false
     @State private var showCandyView: Bool = false
-
     var context: NSManagedObjectContext
 
     var body: some View {
-        
         NavigationView {
-            
             VStack(spacing: 30) {
-                
                 Spacer()
-                
                 Button("Wizard View") {
                     self.showWizardView.toggle()
                 }.sheet(isPresented: $showWizardView) {
@@ -50,19 +44,13 @@ struct HomeView: View {
                 }
                 
                 Spacer()
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
                     .foregroundColor(.gray)
-                
             }
-            
             .navigationBarTitle(Text("CoreData"), displayMode: .inline)
-            
         }
-        
     }
-    
 }
 

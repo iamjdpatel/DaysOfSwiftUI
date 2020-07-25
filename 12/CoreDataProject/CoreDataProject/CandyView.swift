@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct CandyView: View {
-    
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(entity: Country.entity(), sortDescriptors: []) var countries: FetchedResults<Country>
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
                 List {
                     ForEach(countries, id: \.self) { country in
                         Section(header: Text(country.wrappedFullName)) {
@@ -55,12 +51,8 @@ struct CandyView: View {
                     
                     try? self.moc.save()
                 }
-                
             }
             .navigationBarTitle(Text("Candy"), displayMode: .inline)
-            
         }
-        
     }
-    
 }

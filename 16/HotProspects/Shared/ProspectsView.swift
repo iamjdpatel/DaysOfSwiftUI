@@ -10,15 +10,11 @@ import CodeScanner
 import UserNotifications
 
 struct ProspectsView: View {
-    
     @EnvironmentObject var prospects: Prospects
-    
     enum FilterType {
         case none, contacted, uncontacted
     }
-    
     let filter: FilterType
-    
     var title: String {
         switch filter {
         case .none:
@@ -42,11 +38,8 @@ struct ProspectsView: View {
     }
     
     @State private var isShowingScanner = false
-    
     var body: some View {
-        
         NavigationView {
-            
             List {
                 ForEach(filteredProspects) { prospect in
                     VStack(alignment: .leading) {
@@ -68,7 +61,6 @@ struct ProspectsView: View {
                     }
                 }
             }.listStyle(GroupedListStyle())
-                
                 .navigationBarTitle(title)
                 .navigationBarItems(trailing: Button(action: {
                     //static data
@@ -84,40 +76,29 @@ struct ProspectsView: View {
                 .sheet(isPresented: $isShowingScanner) {
                     CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: self.handleScan)
             }
-            
         }
-        
     }
     
     func handleScan(result: Result<String, CodeScannerView.ScanError>) {
-        
         self.isShowingScanner = false
-        
         switch result {
         case .success(let code):
             let details = code.components(separatedBy: "\n")
             guard details.count == 2 else { return }
-            
             let person = Prospect()
             person.name = details[0]
             person.emailAddress = details[1]
-            
             //            self.prospects.people.append(person)
             //            self.prospects.save()
             self.prospects.add(person)
-            
         case .failure(let error):
             print("Scanning failed : \(error)")
         }
-        
     }
     
     func addNotification(for prospect: Prospect) {
-        
         let center = UNUserNotificationCenter.current()
-        
         let addRequest = {
-            
             let content = UNMutableNotificationContent()
             content.title = "Contact \(prospect.name)"
             content.subtitle = prospect.emailAddress
@@ -127,11 +108,9 @@ struct ProspectsView: View {
             dateComponents.hour = 9
             //            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-            
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             center.add(request)
         }
-        
         center.getNotificationSettings { settings in
             if settings.authorizationStatus == .authorized {
                 addRequest()
@@ -145,9 +124,7 @@ struct ProspectsView: View {
                 }
             }
         }
-        
     }
-    
 }
 
 struct ProspectsView_Previews: PreviewProvider {

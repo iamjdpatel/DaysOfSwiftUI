@@ -9,12 +9,10 @@ import SwiftUI
 import MapKit
 
 extension MKPointAnnotation: ObservableObject {
-    
     public var wrappedTitle: String {
         get {
             self.title ?? "Unknown value"
         }
-
         set {
             title = newValue
         }
@@ -24,10 +22,8 @@ extension MKPointAnnotation: ObservableObject {
         get {
             self.subtitle ?? "Unknown value"
         }
-
         set {
             subtitle = newValue
         }
     }
-    
 }

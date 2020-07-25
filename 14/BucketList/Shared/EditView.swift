@@ -9,10 +9,8 @@ import SwiftUI
 import MapKit
 
 struct EditView: View {
-    
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var placemark: MKPointAnnotation
-    
     @State private var loadingState = LoadingState.loading
     @State private var pages = [Page]()
     
@@ -21,16 +19,12 @@ struct EditView: View {
     }
     
     var body: some View {
-        
         NavigationView {
-            
             Form {
-                
                 Section {
                     TextField("Place name", text: $placemark.wrappedTitle)
                     TextField("Description", text: $placemark.wrappedSubtitle)
                 }
-                
                 Section(header: Text("Nearby…")) {
                     if loadingState == .loaded {
                         List(pages, id: \.pageid) { page in
@@ -47,22 +41,17 @@ struct EditView: View {
                         Text("Please try again later.")
                     }
                 }
-                
             }
             .navigationBarTitle(Text("Edit place"), displayMode: .inline)
             .navigationBarItems(trailing: Button("Done") {
                 self.presentationMode.wrappedValue.dismiss()
             })
             .onAppear(perform: fetchNearbyPlaces)
-
         }
-        
     }
     
     func fetchNearbyPlaces() {
-        
         let urlString = "https://en.wikipedia.org/w/api.php?ggscoord=\(placemark.coordinate.latitude)%7C\(placemark.coordinate.longitude)&action=query&prop=coordinates%7Cpageimages%7Cpageterms&colimit=50&piprop=thumbnail&pithumbsize=500&pilimit=50&wbptterms=description&generator=geosearch&ggsradius=10000&ggslimit=50&format=json"
-
         guard let url = URL(string: urlString) else {
             print("Bad URL: \(urlString)")
             return
@@ -85,8 +74,6 @@ struct EditView: View {
             self.loadingState = .failed
         }.resume()
     }
-    
-    
 }
 
 struct EditView_Previews: PreviewProvider {

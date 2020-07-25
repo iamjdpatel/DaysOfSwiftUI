@@ -9,16 +9,12 @@ import CoreData
 import SwiftUI
 
 struct ShipView: View {
-    
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(entity: Ship.entity(), sortDescriptors: [], predicate: NSPredicate(format: "universe == 'Star Wars'")) var ships: FetchedResults<Ship>
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
                 List(ships, id: \.self) { ship in
                     Text(ship.name ?? "Unknown name")
                 }
@@ -44,9 +40,6 @@ struct ShipView: View {
                 }
             }
             .navigationBarTitle(Text("Ship"), displayMode: .inline)
-            
         }
-        
     }
-    
 }

@@ -9,10 +9,8 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
-    
     @Binding var centerCoordinate: CLLocationCoordinate2D
     var annotations: [MKPointAnnotation]
-    
     @Binding var selectedPlace: MKPointAnnotation?
     @Binding var showingPlaceDetails: Bool
     
@@ -34,9 +32,7 @@ struct MapView: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, MKMapViewDelegate {
-        
         var parent: MapView
-        
         init(_ parent: MapView) {
             self.parent = parent
         }
@@ -46,7 +42,6 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            
             // this is our unique identifier for view reuse
             let identifier = "Placemark"
             
@@ -73,13 +68,10 @@ struct MapView: UIViewRepresentable {
         
         func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
             guard let placemark = view.annotation as? MKPointAnnotation else { return }
-            
             parent.selectedPlace = placemark
             parent.showingPlaceDetails = true
         }
-        
     }
-    
 }
 
 struct MapView_Previews: PreviewProvider {

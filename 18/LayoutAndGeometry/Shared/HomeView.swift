@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @State private var showAlignment: Bool = false
     @State private var showCustomAlignment: Bool = false
     @State private var showInnerOuter: Bool = false
@@ -16,13 +15,9 @@ struct HomeView: View {
     @State private var showCoverFlowStyle: Bool = false
 
     var body: some View {
-        
         NavigationView {
-            
             VStack(spacing: 30) {
-                
                 Spacer(minLength: 10)
-                
                 Button("Alignment") {
                     self.showAlignment.toggle()
                 }.sheet(isPresented: $showAlignment) {
@@ -54,20 +49,15 @@ struct HomeView: View {
                 }
                 
                 Spacer()
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
                     .foregroundColor(.gray)
                 
             }
-            
             .navigationBarTitle(Text("Layout & Geometry"), displayMode: .inline)
-            
         }
-        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

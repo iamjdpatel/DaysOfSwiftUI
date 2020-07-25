@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FormView: View {
-    
     @State private var username = ""
     @State private var email = ""
 
@@ -17,22 +16,17 @@ struct FormView: View {
     }
     
     var body: some View {
-        
         Form {
             Section {
                 TextField("Username", text: $username)
                 TextField("Email", text: $email)
             }
-
             Section {
                 Button("Create account") {
                     print("Creating account…")
                 }
             }
             .disabled(disableForm)
-            
         }
-        
     }
-    
 }

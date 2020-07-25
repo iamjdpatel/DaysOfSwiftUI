@@ -9,16 +9,12 @@ import SwiftUI
 import CoreData
 
 struct SingerView: View {
-    
     @Environment(\.managedObjectContext) var moc
     @State private var lastNameFilter = "A"
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
                 FilteredList(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
                     Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
                 }
@@ -40,35 +36,23 @@ struct SingerView: View {
                 }.padding()
                 
                 HStack {
-                
                     Button("Show A") {
                         self.lastNameFilter = "A"
                     }.padding()
-                    
                     Button("Show S") {
                         self.lastNameFilter = "S"
                     }.padding()
-                    
                 }
-                
             }
             .navigationBarTitle(Text("Singer"), displayMode: .inline)
-            
         }
-        
     }
-    
 }
 
-
-
 struct FilteredList<T: NSManagedObject, Content: View>: View {
-    
     var fetchRequest: FetchRequest<T>
     var singers: FetchedResults<T> { fetchRequest.wrappedValue }
-    
     let content: (T) -> Content
-    
     var body: some View {
         List(fetchRequest.wrappedValue, id: \.self) { singer in
             self.content(singer)
@@ -79,5 +63,4 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         fetchRequest = FetchRequest<T>(entity: T.entity(), sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH %@", filterKey, filterValue))
         self.content = content
     }
-    
 }

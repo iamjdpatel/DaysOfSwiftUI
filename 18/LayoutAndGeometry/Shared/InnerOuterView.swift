@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct InnerOuterView: View {
-    
     var body: some View {
         OuterView()
             .background(Color.red)
             .coordinateSpace(name: "Custom")
     }
-    
 }
 
 struct OuterView: View {
