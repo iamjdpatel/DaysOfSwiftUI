@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Facility: Identifiable {
-    
     let id = UUID()
     var name: String
 
@@ -20,7 +19,6 @@ struct Facility: Identifiable {
             "Eco-friendly": "leaf.arrow.circlepath",
             "Family": "person.3"
         ]
-
         if let iconName = icons[name] {
             let image = Image(systemName: iconName)
                             .accessibility(label: Text(name))
@@ -29,7 +27,6 @@ struct Facility: Identifiable {
         } else {
             fatalError("Unknown facility type: \(name)")
         }
-        
     }
 
     var alert: Alert {
@@ -40,7 +37,6 @@ struct Facility: Identifiable {
             "Eco-friendly": "This resort has won an award for environmental friendliness.",
             "Family": "This resort is popular with families."
         ]
-
         if let message = messages[name] {
             return Alert(title: Text(name), message: Text(message))
         } else {

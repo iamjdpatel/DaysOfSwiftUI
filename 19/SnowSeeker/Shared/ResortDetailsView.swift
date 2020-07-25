@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ResortDetailsView: View {
-    
     let resort: Resort
-    
     var size: String {
         switch resort.size {
         case 1:
@@ -27,14 +25,11 @@ struct ResortDetailsView: View {
     }
     
     var body: some View {
-        
         Group {
             Text("Size: \(size)").layoutPriority(1)
             Spacer().frame(height: 0)
             Text("Price: \(price)").layoutPriority(1)
         }
-        
     }
-    
 }
 

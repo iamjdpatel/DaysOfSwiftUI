@@ -8,27 +8,18 @@
 import SwiftUI
 
 struct ResortView: View {
-    
     let resort: Resort
-    
     @Environment(\.horizontalSizeClass) var sizeClass
-    
     @State private var selectedFacility: Facility?
-    
     @EnvironmentObject var favorites: Favorites
 
     var body: some View {
-        
         ScrollView {
-            
             VStack(alignment: .leading, spacing: 0) {
-                
                 Image(decorative: resort.id)
                     .resizable()
                     .scaledToFit()
-                
                 Group {
-                    
                     HStack {
                         if sizeClass == .compact {
                             Spacer()
@@ -44,13 +35,10 @@ struct ResortView: View {
                     .font(.headline)
                     .foregroundColor(.secondary)
                     .padding(.top)
-                    
                     Text(resort.description)
                         .padding(.vertical)
-                    
                     //                    Text(ListFormatter.localizedString(byJoining: resort.facilities))
                     //                        .padding(.vertical)
-                    
                     HStack {
                         ForEach(resort.facilityTypes) { facility in
                             facility.icon
@@ -61,13 +49,11 @@ struct ResortView: View {
                         }
                     }
                     .padding(.vertical)
-                    
                     Text(resort.facilities.joined(separator: ", "))
                         .padding(.vertical)
                 }
                 .padding(.horizontal)
             }
-            
             Button(favorites.contains(resort) ? "Remove from Favorites" : "Add to Favorites") {
                 if self.favorites.contains(self.resort) {
                     self.favorites.remove(self.resort)
@@ -76,14 +62,10 @@ struct ResortView: View {
                 }
             }
             .padding()
-            
         }
         .alert(item: $selectedFacility) { facility in
             facility.alert
         }
         .navigationBarTitle(Text("\(resort.name), \(resort.country)"), displayMode: .inline)
-        
-        
     }
-    
 }

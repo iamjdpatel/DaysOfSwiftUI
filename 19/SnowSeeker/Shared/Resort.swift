@@ -8,7 +8,6 @@
 import Foundation
 
 struct Resort: Codable, Identifiable {
-    
     let id: String
     let name: String
     let country: String
@@ -20,10 +19,8 @@ struct Resort: Codable, Identifiable {
     let elevation: Int
     let runs: Int
     let facilities: [String]
-    
     var facilityTypes: [Facility] {
         facilities.map(Facility.init)
     }
-    
 }
 
