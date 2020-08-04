@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AnimatableDataView: View {
-    
     @State private var insetAmount: CGFloat = 50
     
     var body: some View {
@@ -24,9 +23,7 @@ struct AnimatableDataView: View {
 }
 
 struct Trapezoid: Shape {
-    
     var insetAmount: CGFloat
-    
     var animatableData: CGFloat {
         get { insetAmount }
         set { self.insetAmount = newValue }
@@ -41,5 +38,4 @@ struct Trapezoid: Shape {
         path.addLine(to: CGPoint(x: 0, y: rect.maxY))
         return path
     }
-    
 }

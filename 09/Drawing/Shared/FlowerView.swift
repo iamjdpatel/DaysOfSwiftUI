@@ -8,21 +8,16 @@
 import SwiftUI
 
 struct FlowerView: View {
-    
     @State private var petalOffset = -20.0
     @State private var petalWidth = 100.0
 
     var body: some View {
-        
         VStack {
-            
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
                 .fill(Color.red, style: FillStyle(eoFill: true))
-
             Text("Offset")
             Slider(value: $petalOffset, in: -40...40)
                 .padding([.horizontal, .bottom])
-
             Text("Width")
             Slider(value: $petalWidth, in: 0...100)
                 .padding(.horizontal)
@@ -40,7 +35,6 @@ struct Flower: Shape {
     func path(in rect: CGRect) -> Path {
         // The path that will hold all petals
         var path = Path()
-
         // Count from 0 up to pi * 2, moving up pi / 8 each time
         for number in stride(from: 0, to: CGFloat.pi * 2, by: CGFloat.pi / 8) {
             // rotate the petal by the current value of our loop
@@ -58,7 +52,6 @@ struct Flower: Shape {
             // add it to our main path
             path.addPath(rotatedPetal)
         }
-
         // now send the main path back
         return path
     }

@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct ImplicitAnimationView: View {
-    
     @State private var animationAmount: CGFloat = 1
     
     var body: some View {
-        
         Button("Tap Me") {
             // self.animationAmount += 1
         }
@@ -30,13 +28,10 @@ struct ImplicitAnimationView: View {
                         .repeatForever(autoreverses: false)
                 )
         )
-        
         .onAppear {
             self.animationAmount = 2
         }
-        
     }
-    
 }
 
 struct ImplicitAnimationView_Previews: PreviewProvider {

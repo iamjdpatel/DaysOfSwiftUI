@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct AnimationStackView: View {
-  
     @State private var enabled = false
 
     var body: some View {
-        
         Button("Tap Me") {
             self.enabled.toggle()
         }
@@ -22,7 +20,5 @@ struct AnimationStackView: View {
         .foregroundColor(.white)
         .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
         .animation(.interpolatingSpring(stiffness: 10, damping: 1))
-
     }
-    
 }

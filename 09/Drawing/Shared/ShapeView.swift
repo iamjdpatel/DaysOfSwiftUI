@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct ShapeView: View {
-    
     var body: some View {
-        
         VStack(spacing: 60) {
-            
             Triangle()
                 .stroke(Color.red, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                 .frame(width: 250, height: 250)
@@ -21,9 +18,7 @@ struct ShapeView: View {
                 .stroke(Color.blue, lineWidth: 10)
                 .frame(width: 250, height: 250)
         }
-        
     }
-    
 }
 
 struct ShapeView_Previews: PreviewProvider {
@@ -32,16 +27,13 @@ struct ShapeView_Previews: PreviewProvider {
     }
 }
 
-
 struct Triangle: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        
         path.move(to: CGPoint(x: rect.midX, y: rect.minY))
         path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
         path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-        
         return path
     }
 }
@@ -56,10 +48,8 @@ struct Arc: InsettableShape {
         let rotationAdjustment = Angle.degrees(90)
         let modifiedStart = startAngle - rotationAdjustment
         let modifiedEnd = endAngle - rotationAdjustment
-
         var path = Path()
         path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width / 2 - insetAmount, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: !clockwise)
-
         return path
     }
     
@@ -68,6 +58,5 @@ struct Arc: InsettableShape {
         arc.insetAmount += amount
         return arc
     }
-    
 }
 

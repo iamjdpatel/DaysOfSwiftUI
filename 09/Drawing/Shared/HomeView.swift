@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @State private var showShapes: Bool = false
     @State private var showFlower: Bool = false
     @State private var showImagePaint: Bool = false
@@ -19,13 +18,8 @@ struct HomeView: View {
     @State private var showSpirograph: Bool = false
 
     var body: some View {
-        
         NavigationView {
-            
             VStack(spacing: 30) {
-                
-//                Spacer(minLength: 30)
-                
                 Button("Shapes") {
                     self.showShapes.toggle()
                 }.sheet(isPresented: $showShapes) {
@@ -73,9 +67,7 @@ struct HomeView: View {
                 }.sheet(isPresented: $showSpirograph) {
                     SpirographView()
                 }
-             
                 Spacer()
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
@@ -84,12 +76,8 @@ struct HomeView: View {
             }
             .padding(.top, 50)
             .navigationBarTitle(Text("Animations"), displayMode: .inline)
-            
         }
-        
-        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

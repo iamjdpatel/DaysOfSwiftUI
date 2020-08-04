@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @State private var showImplicitAnimation: Bool = false
     @State private var showAnimatingBindings: Bool = false
     @State private var showExplicitAnimation: Bool = false
@@ -16,15 +15,10 @@ struct HomeView: View {
     @State private var showAnimatingGestures: Bool = false
     @State private var showTransitions: Bool = false
 
-
     var body: some View {
-        
         NavigationView {
-            
             VStack(spacing: 30) {
-                
                 Spacer()
-                
                 Button("Implicit Animation") {
                     self.showImplicitAnimation.toggle()
                 }.sheet(isPresented: $showImplicitAnimation) {
@@ -60,22 +54,15 @@ struct HomeView: View {
                 }.sheet(isPresented: $showTransitions) {
                     TransitionsView()
                 }
-                
                 Spacer()
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
                     .foregroundColor(.gray)
-                
             }
-            
             .navigationBarTitle(Text("Animations"), displayMode: .inline)
-            
         }
-        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

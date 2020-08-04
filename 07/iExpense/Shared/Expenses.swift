@@ -15,7 +15,6 @@ struct ExpenseItem: Identifiable, Codable {
 }
 
 class Expenses: ObservableObject {
-    
     @Published var items: [ExpenseItem] {
         didSet {
             let encoder = JSONEncoder()
@@ -26,7 +25,6 @@ class Expenses: ObservableObject {
     }
     
     init() {
-        
         if let items = UserDefaults.standard.data(forKey: "Items") {
             let decoder = JSONDecoder()
             if let decoded = try? decoder.decode([ExpenseItem].self, from: items) {
@@ -34,8 +32,6 @@ class Expenses: ObservableObject {
                 return
             }
         }
-        
         self.items = []
     }
-    
 }

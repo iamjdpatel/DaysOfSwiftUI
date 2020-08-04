@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @ObservedObject var expenses = Expenses()
     @State private var showingAddExpense = false
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
                 List {
-                    
                     ForEach(expenses.items) { item in
                         HStack {
                             VStack(alignment: .leading) {
@@ -27,23 +22,18 @@ struct HomeView: View {
                                     .font(.headline)
                                 Text(item.type)
                             }
-                            
                             Spacer()
                             Text("$\(item.amount)")
                                 .foregroundColor(getTextColor(amount: item.amount))
                         }
                     }
                     .onDelete(perform: removeItems)
-                    
                 }.listStyle(GroupedListStyle())
-                
                 Text("JD")
                     .font(.caption)
                     .fontWeight(.light)
                     .foregroundColor(.gray)
-                
             }
-            
             .navigationBarTitle(Text("iExpense"), displayMode: .large)
             .navigationBarItems(trailing:
                                     Button(action: {
@@ -52,20 +42,17 @@ struct HomeView: View {
                                         Image(systemName: "plus")
                                     }
             )
-            
             .sheet(isPresented: $showingAddExpense) {
                 AddView(expenses: self.expenses)
             }
-            
         }
-        
     }
     
-    func removeItems(at offsets: IndexSet) {
+    private func removeItems(at offsets: IndexSet) {
         expenses.items.remove(atOffsets: offsets)
     }
     
-    func getTextColor(amount: Int) -> Color {
+    private func getTextColor(amount: Int) -> Color {
         if amount < 100 {
             return .green
         } else if amount < 1000 {
@@ -74,7 +61,6 @@ struct HomeView: View {
             return .red
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

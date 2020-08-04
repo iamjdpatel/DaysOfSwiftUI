@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct AnimatingGesturesView: View {
-    
     @State private var dragAmount = CGSize.zero
-    
-    let letters = Array("Hello SwiftUI")
+    private let letters = Array("Hello SwiftUI")
     @State private var enabled = false
     
     var body: some View {
-        
         VStack(spacing: 100) {
-            
             LinearGradient(gradient: Gradient(colors: [.yellow, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .frame(width: 300, height: 200)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -29,10 +25,9 @@ struct AnimatingGesturesView: View {
                             withAnimation(.spring()) {
                                 self.dragAmount = .zero
                             }
-                        }            )
+                        }
+                )
                 .animation(.spring())
-            
-            
             HStack(spacing: 0) {
                 ForEach(0..<letters.count) { num in
                     Text(String(self.letters[num]))
@@ -51,9 +46,6 @@ struct AnimatingGesturesView: View {
                         self.enabled.toggle()
                     }
             )
-            
         }
-        
     }
-    
 }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AnimatablePairView: View {
-    
     @State private var rows = 4
     @State private var columns = 4
     
@@ -24,7 +23,6 @@ struct AnimatablePairView: View {
 }
 
 struct Checkerboard: Shape {
-    
     var rows: Int
     var columns: Int
     
@@ -32,7 +30,6 @@ struct Checkerboard: Shape {
         get {
            AnimatablePair(Double(rows), Double(columns))
         }
-
         set {
             self.rows = Int(newValue.first)
             self.columns = Int(newValue.second)
@@ -59,7 +56,6 @@ struct Checkerboard: Shape {
                 }
             }
         }
-        
         return path
     }
 }
