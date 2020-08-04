@@ -15,6 +15,9 @@
   Project 5 - WordScramble<br>
   <img src="screenshots/img_p5.png" height= "500">
   
+  Project 6 - Animations<br>
+  ![](screenshots/gif_p6_1.gif)
+  
   Project 7 - iExpense<br>
   <img src="screenshots/img_p7.png" height= "500">
   
