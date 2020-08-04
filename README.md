@@ -1,4 +1,4 @@
-# DaysOfSwiftui
+# DaysOfSwiftUI
 <p style="text-align:center;">
   Project 1 - WeSplit<br>
   <img src="screenshots/img_p1.png" height= "500"> 
