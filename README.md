@@ -16,7 +16,9 @@
   <img src="screenshots/img_p5.png" height= "500">
   
   Project 6 - Animations<br>
-  ![](screenshots/gif_p6_1.gif){:height="650px" width="400px"}
+  <img src="screenshots/gif_p6_1.gif" height= "500">
+
+  ![](screenshots/gif_p6_1.gif)
   ![](screenshots/gif_p6_2.gif)
   ![](screenshots/gif_p6_3.gif)
   
