@@ -17,6 +17,8 @@
   
   Project 6 - Animations<br>
   ![](screenshots/gif_p6_1.gif)
+  ![](screenshots/gif_p6_2.gif)
+  ![](screenshots/gif_p6_3.gif)
   
   Project 7 - iExpense<br>
   <img src="screenshots/img_p7.png" height= "500">
@@ -24,4 +26,10 @@
   Project 8 - Moonshot<br>
   <img src="screenshots/img_p8_1.png" height= "500">
   <img src="screenshots/img_p8_2.png" height= "500">
+  
+  Project 9 - Drawing<br>
+  ![](screenshots/gif_p9_1.gif)
+  ![](screenshots/gif_p9_2.gif)
+  ![](screenshots/gif_p9_3.gif)
+  
 </p>
