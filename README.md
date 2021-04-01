@@ -36,4 +36,17 @@
   <img src="screenshots/img_p10_1.png" height= "500">
   <img src="screenshots/img_p10_2.png" height= "500">
   
+  Project 11 - Bookworm<br>
+  <img src="screenshots/img_p11_1.png" height= "500">
+  <img src="screenshots/img_p11_2.png" height= "500">
+  
+  Project 12 - CoreDataProject<br>
+  <img src="screenshots/img_p12.png" height= "500">
+  
+  Project 13 - Instafilter<br>
+  <img src="screenshots/img_p13.png" height= "500">
+  
+  Project 14 - BucketList<br>
+  <img src="screenshots/img_p14.png" height= "500">
+  
 </p>
